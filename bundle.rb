@@ -2,7 +2,7 @@ require 'ruble'
 
 bundle 'Bundler' do |bundle|
   bundle.author = 'Dr Nic Williams'
-  bundle.contact_email_rot_13 = 'drnicwilliams@gmail.com'
+  bundle.contact_email_rot_13 = 'qeavpjvyyvnzf@tznvy.pbz'
   bundle.description = "Helpers for managing Gemfiles and bundler commands."
 
   bundle.menu 'Bundler' do |main_menu|
