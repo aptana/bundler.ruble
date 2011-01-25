@@ -1,0 +1,152 @@
+!!com.aptana.scripting.model.BundleElement
+author: Dr Nic Williams
+children:
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: init
+    customProperties: null
+    displayName: init
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: check
+    customProperties: null
+    displayName: check
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: package
+    customProperties: null
+    displayName: package
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: install
+    customProperties: null
+    displayName: install
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: update
+    customProperties: null
+    displayName: update
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: list
+    customProperties: null
+    displayName: list
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: gem
+    customProperties: null
+    displayName: gem
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: group
+    customProperties: null
+    displayName: group
+    path: bundle.rb
+    scope: null
+  commandName: Bundler
+  customProperties: null
+  displayName: Bundler
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: package, inputPath: null, keyBindingMap: null, outputPath: null, outputType: discard,
+  path: commands/commands.rb, runType: current_thread, scope: source.ruby, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: install, inputPath: null, keyBindingMap: null, outputPath: null, outputType: discard,
+  path: commands/commands.rb, runType: current_thread, scope: source.ruby, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: check, inputPath: null, keyBindingMap: null, outputPath: null, outputType: discard,
+  path: commands/commands.rb, runType: current_thread, scope: source.ruby, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: update, inputPath: null, keyBindingMap: null, outputPath: null, outputType: discard,
+  path: commands/commands.rb, runType: current_thread, scope: source.ruby, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: init, inputPath: null, keyBindingMap: null, outputPath: null, outputType: discard,
+  path: commands/commands.rb, runType: current_thread, scope: source.ruby, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement {async: false, customProperties: null,
+  displayName: list, inputPath: null, keyBindingMap: null, outputPath: null, outputType: discard,
+  path: commands/commands.rb, runType: current_thread, scope: source.ruby, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.CommandElement
+  async: false
+  customProperties:
+    prefix_values: [gem]
+  displayName: gem
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.ruby
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [group]
+  displayName: group
+  expansion: "group :${1:development} do\n  $0\nend"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.ruby
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [source]
+  displayName: source
+  expansion: source :${1:rubygems}
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.ruby
+  workingDirectoryType: UNDEFINED
+- !!com.aptana.scripting.model.SnippetElement
+  async: false
+  customProperties:
+    prefix_values: [git]
+  displayName: git
+  expansion: git "${1:git://github.com/someuser/repo.git}", :tag => "${2:v1.0.0}"
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.ruby
+  workingDirectoryType: UNDEFINED
+copyright: null
+customProperties: {contact_email_rot_13: qeavpjvyyvnzf@tznvy.pbz}
+decreaseIndentMarkers: &id002 {}
+description: Helpers for managing Gemfiles and bundler commands.
+displayName: Bundler
+fileTypeRegistry: *id002
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
+increaseIndentMarkers: *id002
+license: null
+licenseUrl: null
+path: bundle.rb
+repository: null
+visible: true
